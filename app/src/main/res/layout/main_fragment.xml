@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/homebg1"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/message"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:text="Good morning Frank"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/short_msg"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:text="What would you like to do?"
+        android:textAlignment="center"
+        android:layout_below="@+id/message"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/addProspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="48dp"
+            android:background="@null"
+            app:srcCompat="@drawable/prospectadd" />
+        <ImageButton
+            android:id="@+id/reporting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/addProspect"
+            android:layout_marginLeft="8dp"
+            app:srcCompat="@drawable/reporting"
+            android:background="@null"
+            />
+        <ImageButton
+            android:id="@+id/task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/addProspect"
+            app:srcCompat="@drawable/task"
+            android:background="@null" />
+        <ImageButton
+            android:id="@+id/norificaton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/task"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/reporting"
+            app:srcCompat="@drawable/notification"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
